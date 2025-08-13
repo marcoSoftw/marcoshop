@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarcoShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con Menú Hamburguesa -->
+    <header>
+        <div class="header-content">
+            <button class="menu-toggle">☰</button>
+            <div class="logo">
+                <h1>MarcoShop</h1>
+                <p>Tu tienda de hardware y software confiable</p>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle">🌓</button>
+                <button id="cart-toggle" class="cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación (ahora menú lateral en móvil) -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#" class="nav-link active" data-section="inicio">Inicio</a></li>
+            <li><a href="#" class="nav-link" data-section="productos">Productos</a></li>
+            <li><a href="#" class="nav-link" data-section="servicios">Servicios</a></li>
+            
+            <li><a href="#" class="nav-link" data-section="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+    <!-- Contenido Principal (8 productos) -->
+    <main>
+        <section id="inicio" class="content-section active">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Encuentra los mejores productos y servicios tecnológicos.</p>
+            <div class="hero-image"></div>
+        </section>
+        
+        <section id="servicios" class="content-section">
+            <h2>Nuestros Servicios</h2>
+            <p>Descubre lo que podemos hacer por ti.</p>
+            <div class="servicios-container" id="servicios-container">
+                <div class="servicios">
+                 <!-- Producto 1 -->
+                 <div class="producto">
+                    <img src="img/1175208.webp" alt="Procesador">
+                    <h3>Desarrollo Web</h3>
+                    <h4>Desarrollo web con HTLM, JS y CSS. Desarrollo de paginas web sencillas. Precio dependiendo de la complejidad del proyecto.</h4>
+                    <p class="precio">$99.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="img/java.webp" alt="Procesador">
+                    <h3>Desarrollo JAVA</h3>
+                    <h4>Desarrollo de aplicaciones para escritorio con JAVA y base de Datos SQL. Precio dependiendo de la complejidad del proyecto.</h4>
+                    <p class="precio">$99.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+    
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="img/react.webp" alt="Procesador">
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <h4>Desarrollo de aplicaciones web como un Market para su emprendimiento con React. Precio dependiendo de la complejidad del proyecto.</h4>
+                    <p class="precio">$99.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="productos" class="content-section">
+            <h2>Nuestros Productos</h2>
+            <p>Los mejores productos al mejor precio.</p>
+                    <div class="productos">
+                        <!-- Producto 1 -->
+                        <div class="producto">
+                            <img src="img/i9-13900k.jpg" alt="Procesador">
+                            <h3>Procesador Intel i9-13900K</h3>
+                            <p class="precio">$599.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 2 -->
+                        <div class="producto">
+                            <img src="img/rtx4090.jpg" alt="Tarjeta Gráfica">
+                            <h3>NVIDIA RTX 4090 ZOTAC</h3>
+                            <p class="precio">$1599.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 3 -->
+                        <div class="producto">
+                            <img src="img/ramddr5.jpg" alt="Memoria RAM">
+                            <h3>RAM Corsair 64GB DDR5</h3>
+                            <p class="precio">$199.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 4 -->
+                        <div class="producto">
+                            <img src="img/wd-black-sn850x.jpg" alt="SSD">
+                            <h3>SSD M.2 NVMe Western Digital</h3>
+                            <p class="precio">$149.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 5 -->
+                        <div class="producto">
+                            <img src="img/odyssey27.jpg" alt="Monitor">
+                            <h3>Samsung Odyssey G5 27" QHD</h3>
+                            <p class="precio">$499.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 6 -->
+                        <div class="producto">
+                            <img src="img/razerV4.jpg" alt="Teclado">
+                            <h3>Teclado Razer BlackWidow V4</h3>
+                            <p class="precio">$129.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 7 -->
+                        <div class="producto">
+                            <img src="img/mouse_logitech_g403_hero.jpg" alt="Mouse">
+                            <h3>Mouse Logitech G403 Hero</h3>
+                            <p class="precio">$89.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+            
+                        <!-- Producto 8 -->
+                        <div class="producto">
+                            <img src="img/steelseriesNova.jpg" alt="Auriculares">
+                            <h3>Auricular SteelSeries Arctis Nova</h3>
+                            <p class="precio">$149.99</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+        </section>
+
+
+    </main>
+
+    <!-- Carrito de Compras -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <div class="empty-cart">Tu carrito está vacío</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button id="checkout-whatsapp" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Completar pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Carrito Flotante (solo para móviles) -->
+    <div class="floating-cart" id="floating-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="floating-cart-count">0</span>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 MarcoSoft </p>
+        <div class="footer-links">
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Soporte técnico</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Variables
+            const cart = [];
+            const themeToggle = document.getElementById('theme-toggle');
+            const cartToggle = document.getElementById('cart-toggle');
+            const closeCart = document.getElementById('close-cart');
+            const cartSidebar = document.getElementById('cart-sidebar');
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotalPrice = document.getElementById('cart-total-price');
+            const checkoutWhatsapp = document.getElementById('checkout-whatsapp');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+            const navOverlay = document.getElementById('nav-overlay');
+            const floatingCart = document.getElementById('floating-cart');
+            const floatingCartCount = document.getElementById('floating-cart-count');
+            
+            // Toggle del tema
+            themeToggle.addEventListener('click', () => {
+                const body = document.body;
+                const currentTheme = body.getAttribute('data-theme');
+                
+                if (currentTheme === 'light') {
+                    body.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+            
+            // Cargar tema guardado
+            if (localStorage.getItem('theme') === 'light') {
+                document.body.setAttribute('data-theme', 'light');
+            }
+            
+            // Toggle del menú hamburguesa
+            menuToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mainNav.classList.add('active');
+                navOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Cerrar menú al hacer clic fuera
+            navOverlay.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            // Cerrar menú al hacer clic en un enlace
+            document.querySelectorAll('#main-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('active');
+                    navOverlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            // Toggle del carrito (desktop)
+            cartToggle.addEventListener('click', () => {
+                cartSidebar.classList.add('active');
+                cartOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Toggle del carrito flotante (mobile)
+            floatingCart.addEventListener('click', () => {
+                cartSidebar.classList.add('active');
+                cartOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeCart.addEventListener('click', () => {
+                cartSidebar.classList.remove('active');
+                cartOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            cartOverlay.addEventListener('click', () => {
+                cartSidebar.classList.remove('active');
+                cartOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Añadir productos al carrito
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const productElement = button.closest('.producto');
+                    const productName = productElement.querySelector('h3').textContent;
+                    const productPrice = parseFloat(productElement.querySelector('.precio').textContent.replace('$', ''));
+                    const productImg = productElement.querySelector('img').src;
+                    
+                    // Verificar si el producto ya está en el carrito
+                    const existingItem = cart.find(item => item.name === productName);
+                    
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push({
+                            name: productName,
+                            price: productPrice,
+                            img: productImg,
+                            quantity: 1
+                        });
+                    }
+                    
+                    updateCart();
+                    showCartNotification(productName);
+                });
+            });
+            
+            // Actualizar el carrito
+            function updateCart() {
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<div class="empty-cart">Tu carrito está vacío</div>';
+                    cartTotalPrice.textContent = '$0.00';
+                    cartCount.textContent = '0';
+                    floatingCartCount.textContent = '0';
+                    return;
+                }
+                
+                cartItemsContainer.innerHTML = '';
+                let total = 0;
+                let itemCount = 0;
+                
+                cart.forEach((item, index) => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    itemCount += item.quantity;
+                    
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item';
+                    cartItemElement.innerHTML = `
+                        <img src="${item.img}" alt="${item.name}">
+                        <div class="cart-item-info">
+                            <div class="cart-item-title">${item.name}</div>
+                            <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" data-index="${index}">-</button>
+                                <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-index="${index}">
+                                <button class="quantity-btn plus" data-index="${index}">+</button>
+                            </div>
+                        </div>
+                        <button class="cart-item-remove" data-index="${index}">&times;</button>
+                    `;
+                    
+                    cartItemsContainer.appendChild(cartItemElement);
+                });
+                
+                // Actualizar contadores
+                cartTotalPrice.textContent = `$${total.toFixed(2)}`;
+                cartCount.textContent = itemCount;
+                floatingCartCount.textContent = itemCount;
+                
+                // Event listeners para los controles de cantidad
+                document.querySelectorAll('.quantity-btn.minus').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const index = e.target.getAttribute('data-index');
+                        if (cart[index].quantity > 1) {
+                            cart[index].quantity--;
+                            updateCart();
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('.quantity-btn.plus').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const index = e.target.getAttribute('data-index');
+                        cart[index].quantity++;
+                        updateCart();
+                    });
+                });
+                
+                document.querySelectorAll('.quantity-input').forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        const index = e.target.getAttribute('data-index');
+                        const newValue = parseInt(e.target.value);
+                        if (newValue >= 1) {
+                            cart[index].quantity = newValue;
+                            updateCart();
+                        } else {
+                            e.target.value = cart[index].quantity;
+                        }
+                    });
+                });
+                
+                // Añadir event listeners a los botones de eliminar
+                document.querySelectorAll('.cart-item-remove').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const index = e.target.getAttribute('data-index');
+                        cart.splice(index, 1);
+                        updateCart();
+                    });
+                });
+            }
+            
+            // Notificación al añadir producto
+            function showCartNotification(productName) {
+                const notification = document.createElement('div');
+                notification.className = 'cart-notification';
+                notification.textContent = `¡${productName} añadido al carrito!`;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+                
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+            
+            // Enviar pedido por WhatsApp
+            checkoutWhatsapp.addEventListener('click', () => {
+                if (cart.length === 0) {
+                    alert('Tu carrito está vacío');
+                    return;
+                }
+                
+                let message = '¡Hola MarcoSoft! Quiero realizar el siguiente pedido:\n\n';
+                
+                cart.forEach(item => {
+                    message += `➤ ${item.name} (${item.quantity} x $${item.price.toFixed(2)})\n`;
+                });
+                
+                message += `\n *Total: $${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2)}*`;
+                message += '\n\nPor favor, indíquenme disponibilidad y formas de pago. ¡Gracias!';
+                
+                // Reemplaza este número por el tuyo (con código de país, sin +)
+                const whatsappNumber = '595983856472';
+                const encodedMessage = encodeURIComponent(message);
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            });
+            
+            // Cargar carrito guardado
+            function loadCart() {
+                const savedCart = localStorage.getItem('cart');
+                if (savedCart) {
+                    cart.push(...JSON.parse(savedCart));
+                    updateCart();
+                }
+            }
+            
+            // Guardar carrito al cerrar la página
+            window.addEventListener('beforeunload', () => {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            });
+            
+            // Ocultar/mostrar elementos según el tamaño de pantalla
+            function handleResponsiveElements() {
+                if (window.innerWidth <= 768) {
+                    // Modo móvil
+                    document.querySelector('.cart-button').style.display = 'none';
+                    document.querySelector('.floating-cart').style.display = 'flex';
+                } else {
+                    // Modo escritorio
+                    document.querySelector('.cart-button').style.display = 'flex';
+                    document.querySelector('.floating-cart').style.display = 'none';
+                }
+            }
+            
+            // Ejecutar al cargar y al redimensionar
+            window.addEventListener('load', () => {
+                handleResponsiveElements();
+                loadCart();
+            });
+            
+            window.addEventListener('resize', handleResponsiveElements);
+        });
+    </script>
+</body>
+</html>
